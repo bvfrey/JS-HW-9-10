@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WH 9, 10</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/jcarousel.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jcarousel.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="all" href="css/jquery.selectbox.css" />
+    <script type="text/javascript" src="js/jquery.selectbox-0.6.1.js"></script>
+
+
+    <script src="js/js.js" ></script>
+    <script src="js/js0.js" ></script>
+
+
+
+
+</head>
+
+<body>
+
+<!-- <<<<<<<<<< HEDER >>>>>>>>>> -->
+<div class="wrapper">
+
+    <header class="header">
+        <h1>Домашняя работа</h1>
+        <h2>JavaScript 9 - 10</h2>
+
+        <div class="header-gradient"></div>
+        <div class="header-picture"></div>
+    </header>
+    <!-- <<<<<<<<<< MENU -->
+    <div class="menu">
+            <ul>
+                <li class="menu-li">
+                    <a class="menu__terminal" href="#" id="show-task">Task</a>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Carousel</a>
+                    <div class="dropdown-content">
+                        <a class="menu__terminal" id="show-pluginCarousel">Plugin</a>
+                        <a class="menu__terminal" id="show-myCarousel">Self-made</a>
+                    </div>
+                </li>
+                <li class="dropdown" id="show-menu3">
+                    <a class="dropbtn show-menu3">Menu Item 3</a>
+                    <div class="dropdown-content">
+                        <a class="menu__terminal vshow-menu3">Menu Item 3-1</a>
+                        <a class="dropdown__2">Menu Item 3-2 </a>
+                        <div class="dropdown-content__level2">
+                            <a class="menu__terminal show-menu3">Menu Item 3-2-1</a>
+                            <a class="menu__terminal show-menu3">Menu Item 3-2-2</a>
+                            <a class="menu__terminal show-menu3">Menu Item 3-2-3</a>
+                        </div>
+                        <a class="menu__terminal show-menu3">Menu Item 3-3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    <!-- <<<<<<<<<< MAIM >>>>>>>>>> -->
+    <main>
+        <!-- <<<<<<<<<< TASK >>>>>>>>>> -->
+        <div class="task toggle" id="task">
+            <h2>Урок 9-10</h2>
+
+            <p><span>Домашнее задание:</span></p>
+            <ol>
+                <li>Создать страницу, к ней подключить карусель</li>
+                <li>К той же странице подключить любой, понравившийся вам нестандартный select из списка. Если лень выбирать - подключайте cuSel</li>
+                <li>Подключить к странице нестандартные чекбоксы двумя способами: с помощью jquery (сделать такой же вариант как здесь); с помощью css</li>
+                <li>Дизайн карусели, селекта и чекбокса любой</li>
+                <li>Создать анимированную выпадающую двухуровневую меню, как на примере. Плагины для меню не используем, логика появления и анимирования должна быть написана вами. Так же, во время анимации желательно менять цвет фона появившейся менюшки. Для этого вам может понадобится плагин</li>
+                <li>Бонусное задание, для тру-разрабов: написать такую же выпадающую меню на чистом js. Анимировать цвет фона не обязательно. Всем выполнять не обязательно. Только тем, кто хочет постичь больше</li>
+            </ol>
+        </div>
+
+        <!-- <<<<<<<<<< CAROUSEL PLUGIN >>>>>>>>>> -->
+        <div class='jcarousel-wrapper toggle pluginCarousel' id="pluginCarousel">
+            <div class='jcarousel'>
+                <ul>
+                    <li><img src="img/r0.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r1.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r2.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r3.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r4.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r5.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r6.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r7.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r8.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r9.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r10.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r11.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r12.jpg" width="500" height="300" alt=""></li>
+                    <li><img src="img/r13.jpg" width="500" height="300" alt=""></li>
+                </ul>
+            </div>
+            <a href="#" class='jcarousel-control-prev'>&lsaquo;</a>
+            <a href="#" class='jcarousel-control-next'>&rsaquo;</a>
+
+        </div>
+
+        <!-- <<<<<<<<<< MY CAROUSEL >>>>>>>>>> -->
+        <div class="carousel toggle myCarousel" id="myCarousel">
+                <a id="go-left" href="#"><div>&#10094;</div></a>
+                <div class="small img-bordered bg-0 toucheble" id="pic-0"></div>
+                <div class="medium img-bordered bg-1 toucheble" id="pic-1"></div>
+                <div class="big img-bordered bg-2" id="pic-2"></div>
+                <div class="medium img-bordered bg-3 toucheble" id="pic-3"></div>
+                <div class="small img-bordered bg-4 toucheble" id="pic-4"></div>
+                <a id="go-right" href="#"><div>&#10095;</div></a>
+        </div>
+
+        <!-- <<<<<<<<<< FORM - PARAMETERS >>>>>>>>>> -->
+        <div class="form__wrapper">
+            <a id="form_collapse">Свернуть</a>
+            <form action="/action_page.php" class='form__togglable'>
+
+                <p>Выберите цвет шапки</p>
+                <select class="my-select" name="header" placeholder="Выберите цвет шапки">
+                    <option value="IndianRed">Indian Red</option>
+                    <option value="Maroon">Maroon</option>
+                    <option value="SlateGray">Slate Gray</option>
+                    <option value="DarkSeaGreen">Dark Sea Green</option>
+                    <option value="Tan">Tan</option>
+                </select>
+
+                <dd id="demo-default-usage">
+                    <div class="demoTarget">
+                        <p>Выберити цвет фона</p>
+                        <select id="default-usage-select" class="background">
+                            <!-- <option value="--">выберити цвет фона</option> -->
+                            <option value="AntiqueWhite">Antique White</option>
+                            <option value="IndianRed">Indian Red</option>
+                            <option value="Lavender">Lavender</option>
+                            <option value="MediumSeaGreen">Medium Sea Green</option>
+                            <option value="PapayaWhip">Papaya Whip</option>
+                        </select>
+                        <div class="clr"></div>
+                    </div>
+                    <script type="text/javascript">
+            		//<![CDATA[
+            			$("#default-usage-select").selectbox().bind('change', function(){
+            				$('<div>Value of #default-usage-select changed to: '+$(this).val()+'</div>').appendTo('#demo-default-usage .demoTarget').fadeOut(5000, function(){
+            					$(this).remove();
+            				});
+            			});
+            		//]]>
+            		</script>
+                </dd>
+
+
+                <div class="">
+                <span class="niceCheck separated" onclick="changeCheck(this)" id="niceCheckbox1"><input type="checkbox" name="ch1" class="cat"   /></span>
+                Добавить кота</div>
+                <div>
+                <span class="niceCheck" onclick="changeCheck(this)" id="niceCheckbox2"><input type="checkbox" name="ch1" class="spider"  /></span>
+                Добавить паука</div>
+
+
+                <button class="button button-on" type="button">Применить</button>
+                <button class="button button-default" type="button">Сбросить</button>
+
+            </form>
+
+
+        </div>
+
+        <!-- <<<<<<<<<< FORM - EVALUATION >>>>>>>>>> -->
+        <div class="form__evaluation">
+            <h4>Пожалуйста, оцените работу:</h4>
+
+            <div class="checkbox">
+	            <input id="check1" type="checkbox" name="check" value="check1">
+	            <label for="check1">Отлично!</label>
+	        </div>
+            <div class="checkbox">
+            	<input id="check2" type="checkbox" name="check" value="check2">
+            	<label for="check2">Зачёт автоматом</label>
+            </div>
+            <div class="checkbox">
+                <input id="check3" type="checkbox" name="check" value="check3" disabled>
+                <label for="check3">Нужно доработать</label>
+            </div>
+            <button class="button button__ok" type="button"> Оценить </button>
+        </div>
+
+        <div class="pic1"></div>
+        <div class="pic2"></div>
+
+        <div class="menu3 toggle" id="menu3">
+            <h2>Тут ничего не планировалось</h2>
+        </div>
+
+
+    </main>
+
+</div>
+</body>
+
+</html>
